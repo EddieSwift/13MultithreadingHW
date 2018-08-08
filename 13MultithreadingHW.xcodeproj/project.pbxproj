@@ -13,6 +13,7 @@
 		2C41760C211B0B1800F2F28F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C41760B211B0B1800F2F28F /* Assets.xcassets */; };
 		2C41760F211B0B1800F2F28F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C41760D211B0B1800F2F28F /* LaunchScreen.storyboard */; };
 		2C417612211B0B1800F2F28F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C417611211B0B1800F2F28F /* main.m */; };
+		2C41761A211B0B9F00F2F28F /* EGBStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C417619211B0B9F00F2F28F /* EGBStudent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		2C41760E211B0B1800F2F28F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C417610211B0B1800F2F28F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C417611211B0B1800F2F28F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C417618211B0B9F00F2F28F /* EGBStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGBStudent.h; sourceTree = "<group>"; };
+		2C417619211B0B9F00F2F28F /* EGBStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGBStudent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 			children = (
 				2C417602211B0B1700F2F28F /* AppDelegate.h */,
 				2C417603211B0B1700F2F28F /* AppDelegate.m */,
+				2C417618211B0B9F00F2F28F /* EGBStudent.h */,
+				2C417619211B0B9F00F2F28F /* EGBStudent.m */,
 				2C417605211B0B1700F2F28F /* ViewController.h */,
 				2C417606211B0B1700F2F28F /* ViewController.m */,
 				2C417608211B0B1700F2F28F /* Main.storyboard */,
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C41761A211B0B9F00F2F28F /* EGBStudent.m in Sources */,
 				2C417607211B0B1700F2F28F /* ViewController.m in Sources */,
 				2C417612211B0B1800F2F28F /* main.m in Sources */,
 				2C417604211B0B1700F2F28F /* AppDelegate.m in Sources */,
