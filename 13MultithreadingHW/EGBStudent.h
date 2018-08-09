@@ -12,7 +12,9 @@
 @interface EGBStudent : NSObject
 
 @property (strong, nonatomic) NSString *name;
-@property (assign, nonatomic) CGFloat quesSpeed;
+
+// Level "Master"
++ (dispatch_queue_t) studentsQueue;
 
 // Level "Learner
 //- (void) guesNumber:(NSInteger) number value:(NSInteger) range;
