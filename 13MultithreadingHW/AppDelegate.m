@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "EGBStudent.h"
+#import "EGBStudentOperation.h"
 
 @interface AppDelegate ()
 @property (strong, nonatomic) NSArray *allStudents;
@@ -17,7 +18,44 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+  
+    // Level "SuperMan"
     
+    EGBStudentOperation *student1 = [[EGBStudentOperation alloc] init];
+    student1.name = @"John";
+    
+    EGBStudentOperation *student2 = [[EGBStudentOperation alloc] init];
+    student2.name = @"Richard";
+    
+    EGBStudentOperation *student3 = [[EGBStudentOperation alloc] init];
+    student3.name = @"Steve";
+    
+    EGBStudentOperation *student4 = [[EGBStudentOperation alloc] init];
+    student4.name = @"Gary";
+    
+    EGBStudentOperation *student5 = [[EGBStudentOperation alloc] init];
+    student5.name = @"Hanry";
+    
+    self.allStudents = [NSArray arrayWithObjects:student1, student2, student3, student4, student5, nil];
+    
+    NSInteger value = 10000;
+    NSInteger ramdomNum = arc4random() % value;
+    
+    NSLog(@"Number that students need to gues is %ld", ramdomNum);
+    NSLog(@" ");
+    
+    // Block for printing results
+    void (^resulBlock) (NSString *, NSInteger, CGFloat) = ^(NSString *name, NSInteger ramdomNum, CGFloat time) {
+        NSLog(@"%@ guessed the right number: %ld in %f sec", name, (long)ramdomNum, time);
+    };
+    
+    for (EGBStudentOperation *student in self.allStudents) {
+        [student guesNumber:ramdomNum value:value resultBlock:resulBlock];
+    }
+    return YES;
+}
+    
+    /*
     EGBStudent *student1 = [[EGBStudent alloc] init];
     student1.name = @"John";
     
@@ -49,9 +87,9 @@
     for (EGBStudent *student in self.allStudents) {
         [student guesNumber:ramdomNum value:value resultBlock:resulBlock];
     }
+     */
     
-    return YES;
-}
+
     
     
     // Level "Learner
